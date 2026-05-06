@@ -3,7 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from backend.rag import answer_question
 from gtts import gTTS
-from pymongo import MongoClient
 import os
 import uuid
 from dotenv import load_dotenv
@@ -11,11 +10,13 @@ from pymongo import MongoClient
 import certifi
 
 app = FastAPI()
+load_dotenv()
 
+MONGO_URI = os.getenv("MONGO_URI")
 #avatar123
 # 🔗 MongoDB Connection
 client = MongoClient(
-    "mongodb+srv://ai_avatar:ambedkaravatar@cluster0.1gclagy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        MONGO_URI,
     tlsCAFile=certifi.where()
 )
 db = client["ai_avatar"]
