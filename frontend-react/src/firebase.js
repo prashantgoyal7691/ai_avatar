@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDD4kRlgZGPEamlWpBNJ0yPHTbts16B5Sw",
-  authDomain: "ai-avatar-ca759.firebaseapp.com",
-  projectId: "ai-avatar-ca759",
-  storageBucket: "ai-avatar-ca759.firebasestorage.app",
-  messagingSenderId: "944598528306",
-  appId: "1:944598528306:web:4fa8b0ea851c1d479ca72b",
-  measurementId: "G-PYRRLHZBYT",
+  apiKey: "AIzaSyAmOC75R1lW55uLSdfZ4DstMgyl2pYwtUg",
+  authDomain: "ai-avatar-8a814.firebaseapp.com",
+  projectId: "ai-avatar-8a814",
+  storageBucket: "ai-avatar-8a814.firebasestorage.app",
+  messagingSenderId: "655872779224",
+  appId: "1:655872779224:web:3d910e203b09b3031fc8ad",
+  measurementId: "G-X3PMTCR3K3"
 };
 
 const app = initializeApp(firebaseConfig);
