@@ -25,8 +25,7 @@ users_collection = db["users"]
 # 🌐 Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    # allow_origins=["https://ai-avatar-dba.netlify.app","http://localhost:5173"],
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

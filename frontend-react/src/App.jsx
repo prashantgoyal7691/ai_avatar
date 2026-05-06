@@ -33,7 +33,7 @@ function App() {
 
     console.log("Fetching chats for:", id);
 
-    fetch(`http://127.0.0.1:8000/get-chats?userId=${id}`)
+    fetch(`${import.meta.env.VITE_API_URL}/get-chats?userId=${id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Chats from DB:", data);
@@ -109,7 +109,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/ask", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/ask`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

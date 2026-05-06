@@ -9,8 +9,7 @@ venv/
 # Environment secrets
 .env
 
-# Generated files
-prepared_chunks.json
+
 
 # ML model caches
 .cache/
