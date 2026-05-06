@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from backend.rag import answer_question
+from rag import answer_question
 from gtts import gTTS
 import os
 import uuid
