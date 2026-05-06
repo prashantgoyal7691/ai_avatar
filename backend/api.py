@@ -25,7 +25,11 @@ users_collection = db["users"]
 # 🌐 Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://ai-avatar-neon.vercel.app/",
+        "https://ai-avatar-prashantgo25112s-projects.vercel.app/",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
