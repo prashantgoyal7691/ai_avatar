@@ -165,7 +165,7 @@ function Sidebar({
                 // 🔥 Call backend delete
                 if (user) {
                   try {
-                    await fetch("http://127.0.0.1:8000/delete-chat", {
+                    await fetch(`${import.meta.env.VITE_API_URL}/delete-chat`, {
                       method: "DELETE",
                       headers: {
                         "Content-Type": "application/json",
