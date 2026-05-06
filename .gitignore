@@ -32,5 +32,12 @@ Thumbs.db
 # Generated audio files
 Dr.Ambedkar-RAG/audio/
 
+backend/.env
+frontend-react/.env
 env/
+audio/
+
+node_modules/
+
+frontend-react/dist
 audio/
