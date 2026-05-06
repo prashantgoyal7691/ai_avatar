@@ -27,8 +27,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://ai-avatar-neon.vercel.app/",
-        "https://ai-avatar-prashantgo25112s-projects.vercel.app/",
+        "https://ai-avatar-neon.vercel.app",
+        "https://ai-avatar-prashantgo25112s-projects.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -61,15 +61,6 @@ async def ask_endpoint(request: Request):
     print(f"User: {userId} | Chat: {chatId}")
     print(f"Question: {question}")
 
-
-
-    # 🔹 Ensure user exists
-
-    if not userId:
-        return {
-            "answer": text_response,
-            "audio_url": f"/audio/{filename}"
-        }
     
     user = users_collection.find_one({"userId": userId})
 
