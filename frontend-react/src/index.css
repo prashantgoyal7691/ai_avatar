@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1e1f24;
+  color: white;
+}
+* {
+  caret-color: transparent;
+}
+input, textarea {
+  caret-color: auto;
+}
