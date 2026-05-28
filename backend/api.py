@@ -28,6 +28,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "https://ai-avatar-dba.netlify.app",
+        "https://ai-avatar.p19.in",
         "https://ai-avatar-prashantgo25112s-projects.vercel.app",
     ],
     allow_credentials=True,
